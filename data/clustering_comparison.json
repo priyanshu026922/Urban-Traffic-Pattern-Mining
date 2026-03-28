@@ -1,0 +1,16 @@
+{
+  "DBSCAN": {
+    "n_clusters": 4,
+    "noise_ratio": 0.0022759103641456584,
+    "silhouette": 0.3952842951520448,
+    "calinski_harabasz": 42.2833446762345,
+    "davies_bouldin": 0.606386846732323
+  },
+  "HDBSCAN": {
+    "n_clusters": 7,
+    "noise_ratio": 0.09678454715219421,
+    "silhouette": 0.16437000379068495,
+    "calinski_harabasz": 6346.230850974427,
+    "davies_bouldin": 1.774365856109831
+  }
+}
