@@ -73,61 +73,50 @@ states and detect anomalies
 | **File Format** | HDF5 (.h5) |
 | **File Size** | ~53 MB |
 
-### Sample Data Structure
-Timestamp Sensor_1 Sensor_2 Sensor_3 ... Sensor_207
-2012-03-01 00:00:00 65.2 61.8 67.1 ... 59.4
-2012-03-01 00:05:00 64.8 62.1 66.9 ... 60.1
-2012-03-01 00:10:00 65.0 61.5 67.3 ... 58.7
+### 📊 Sample Data Structure
 
-🛠️ Installation
-StepActionCommand / DetailsStep 1Clone the repositorygit clone https://github.com/YOUR_USERNAME/urban-traffic-pattern-mining.git then cd urban-traffic-pattern-miningStep 2Create a virtual environmentpython -m venv venv and activate itStep 3Install all dependenciespip install -r requirements.txtStep 4Dataset DownloadDownload and place dataset in the /data folder
+| Timestamp           | Sensor_1 | Sensor_2 | Sensor_3 | ... | Sensor_207 |
+|---------------------|----------|----------|----------|-----|------------|
+| 2012-03-01 00:00:00 | 65.2     | 61.8     | 67.1     | ... | 59.4       |
+| 2012-03-01 00:05:00 | 64.8     | 62.1     | 66.9     | ... | 60.1       |
+| 2012-03-01 00:10:00 | 65.0     | 61.5     | 67.3     | ... | 58.7       |
 
+---
 
-📓 Run Notebooks in Sequential Order
-StepNotebookPurposeStep 101_data_cleaning.ipynb🧹 CleanStep 202_engineer.ipynb⚙️ EngineerStep 303_cluster.ipynb🔵 ClusterStep 404_visualize.ipynb📊 VisualizeStep 505_interpret.ipynb🔍 Interpret Data Features, Patterns, Results & Ethics
+### 🛠️ Installation
 
+| Step | Action | Command / Details |
+|------|--------|-------------------|
+| Step 1 | Clone the repository | `git clone https://github.com/YOUR_USERNAME/urban-traffic-pattern-mining.git` then `cd urban-traffic-pattern-mining` |
+| Step 2 | Create a virtual environment | `python -m venv venv` and activate it |
+| Step 3 | Install all dependencies | `pip install -r requirements.txt` |
+| Step 4 | Dataset Download | Download and place dataset in the `/data` folder |
 
-⚠️ Note: Notebooks must be run in order — each step depends on outputs from the previous one.
+---
 
+### 📓 Run Notebooks in Sequential Order
 
-## 📓 Notebooks Overview :
+| Step | Notebook | Purpose |
+|------|----------|---------|
+| Step 1 | `01_data_cleaning.ipynb` | 🧹 Clean |
+| Step 2 | `02_engineer.ipynb` | ⚙️ Engineer |
+| Step 3 | `03_cluster.ipynb` | 🔵 Cluster |
+| Step 4 | `04_visualize.ipynb` | 📊 Visualize |
+| Step 5 | `05_interpret.ipynb` | 🔍 Interpret Data Features, Patterns, Results & Ethics |
 
-### Notebook 1: Data Understanding & Preprocessing
-- Loads METR-LA dataset (207 sensors, 34K timestamps)
-- Handles missing values using forward-fill and interpolation
-- Removes zero-speed anomalies (sensor errors)
-- Generates initial EDA plots (distributions, heatmaps)
-- Saves cleaned dataset for next step
+> ⚠️ **Note:** Notebooks must be run **in order** — each step depends on outputs from the previous one.
 
-### Notebook 2: Feature Engineering
-- Creates 31 features from raw speed data
-- Network statistics: mean, std, min, max, range, CV
-- Temporal: cyclical hour/day encoding, peak flags, weekend flag
-- Rolling windows: 30min, 1hr, 2hr moving averages and deltas
-- Congestion indicators: % sensors congested, severe count
-- Standardizes all features using StandardScaler
+---
 
-### Notebook 3: Unsupervised Modelling
-- Applies PCA to reduce 31 features → ~10 components (95% variance)
-- Tunes DBSCAN using k-distance plot and grid search
-- Runs HDBSCAN as primary clustering model
-- Compares both models using Silhouette and Davies-Bouldin scores
-- Profiles and names each discovered cluster
-- Identifies anomalies (noise points = unusual traffic events)
+### 📓 Notebooks Overview
 
-### Notebook 4: Visualization & Analysis
-- 20+ plots covering temporal patterns, clusters, and anomalies
-- Speed timeline colored by cluster
-- 24-hour speed profiles and cluster heatmaps
-- Anomaly highlighting and transition probability matrix
-- Summary dashboard combining all key visuals
-
-### Notebook 5: Interpretation & Ethical Relevance
-- Interprets each cluster (free flow, rush hour, moderate, anomaly)
-- Provides 7 traffic management recommendations
-- Discusses societal benefits (emissions, safety, economy)
-- Addresses ethical concerns (privacy, bias, transparency)
-- Lists limitations and future work directions
+| Notebook | Description |
+|----------|-------------|
+| `01_data_cleaning.ipynb` | Handles missing values, outliers, and formats raw sensor data |
+| `02_engineer.ipynb` | Creates new features like time-of-day, rolling averages, and lag variables |
+| `03_cluster.ipynb` | Applies clustering algorithms to discover traffic patterns |
+| `04_visualize.ipynb` | Generates plots and maps to visualize discovered clusters and trends |
+| `05_interpret.ipynb` | Interprets results, evaluates model fairness, and discusses ethics |
 
 
 ## 📊 Visualizations
