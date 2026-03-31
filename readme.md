@@ -42,11 +42,11 @@ everything on its own.
 ---
 ## 👥 Team Members
 
-* **Priyanshu Ranjan** 
-* **Manas Kumar**
-* **Mohammad Mazin**
-* **Anirudh Sharma**
-* **Mahek Mazumdar**
+* **Priyanshu Ranjan** (BTECH/10886/23)
+* **Manas Kumar**(BTECH/10909/23)
+* **Mohammad Mazin**(BTECH/10907/23)
+* **Anirudh Sharma**(BTECH/10908/23)
+* **Mahek Mazumdar**(BTECH/10832/23)
 
 
 ## 🔍 Problem Statement
