@@ -105,11 +105,11 @@ states and detect anomalies
 
 | Step | Notebook | Purpose |
 |------|----------|---------|
-| Step 1 | `01_data_cleaning.ipynb` | 🧹 Clean |
-| Step 2 | `02_engineer.ipynb` | ⚙️ Engineer |
-| Step 3 | `03_cluster.ipynb` | 🔵 Cluster |
-| Step 4 | `04_visualize.ipynb` | 📊 Visualize |
-| Step 5 | `05_interpret.ipynb` | 🔍 Interpret Data Features, Patterns, Results & Ethics |
+| Step 1 | `01_data_understanding_preprocessing.ipynb` | Clean & Understand Data |
+| Step 2 | `02_feature_engineering.ipynb` | Feature Engineering |
+| Step 3 | `03_unsupervised_modelling.ipynb` | Clustering / Modeling |
+| Step 4 | `04_visualization_analysis.ipynb` | Visualization & Analysis|
+| Step 5 | `05_interpretation_ethics.ipynb` | Interpretation, Ethics & Insights |
 
 > ⚠️ **Note:** Notebooks must be run **in order** — each step depends on outputs from the previous one.
 
@@ -119,16 +119,16 @@ states and detect anomalies
 
 | Notebook | Description |
 |----------|-------------|
-| `01_data_cleaning.ipynb` | Handles missing values, outliers, and formats raw sensor data |
-| `02_engineer.ipynb` | Creates new features like time-of-day, rolling averages, and lag variables |
-| `03_cluster.ipynb` | Applies clustering algorithms to discover traffic patterns |
-| `04_visualize.ipynb` | Generates plots and maps to visualize discovered clusters and trends |
-| `05_interpret.ipynb` | Interprets results, evaluates model fairness, and discusses ethics |
+| `01_data_understanding_preprocessing.ipynb` | Handles missing values, outliers, and formats raw sensor data |
+| `02_feature_engineering.ipynb` | Creates new features like time-of-day, rolling averages, and lag variables |
+| `03_unsupervised_modelling.ipynb` | Applies clustering algorithms to discover traffic patterns |
+| `04_visualization_analysis.ipynb` | Generates plots and maps to visualize discovered clusters and trends |
+| `05_interpretation_ethics.ipynb` | Interprets results, evaluates model fairness, and discusses ethics |
 
 
 ## 📊 Visualizations
 
-All plots saved to `outputs/figures/`
+All plots saved to `data/`
 
 | # | Plot | What It Shows |
 |---|------|---------------|
