@@ -79,7 +79,6 @@ states and detect anomalies
 | **Total Timestamps** | ~34,272 rows |
 | **Total Data Points** | ~7.1 million speed readings |
 | **File Format** | HDF5 (.h5) |
-| **File Size** | ~53 MB |
 
 ### 📊 Sample Data Structure
 
