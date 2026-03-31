@@ -40,6 +40,14 @@ across Los Angeles using **density-based clustering (HDBSCAN)** and
 everything on its own.
 
 ---
+## 👥 Team Members
+
+* **Priyanshu Ranjan** 
+* **Manas Kumar**
+* **Mohammad Mazin**
+* **Anirudh Sharma**
+* **Mahek Mazumdar**
+
 
 ## 🔍 Problem Statement
 
