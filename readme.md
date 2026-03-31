@@ -15,25 +15,8 @@
 - [About The Project](#-about-the-project)
 - [Problem Statement](#-problem-statement)
 - [Dataset](#-dataset)
-- [Project Architecture](#-project-architecture)
-- [Tech Stack](#-tech-stack)
-- [Repository Structure](#-repository-structure)
-- [Getting Started](#-getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Dataset Download](#dataset-download)
-- [Execution Guide](#-execution-guide)
 - [Notebooks Overview](#-notebooks-overview)
-- [Feature Engineering Details](#-feature-engineering-details)
-- [Models Used](#-models-used)
-- [Key Results](#-key-results)
 - [Visualizations](#-visualizations)
-- [Ethical Considerations](#-ethical-considerations)
-- [Limitations & Future Work](#-limitations--future-work)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Acknowledgements](#-acknowledgements)
-- [Contact](#-contact)
 
 ---
 
@@ -112,7 +95,7 @@ cd urban-traffic-pattern-mining
 **Step 4:Dataset Download
 
 
-***WE Run notebooks in sequential order!
+### WE Run notebooks in sequential order!
 
 Step 1 ──► Step 2 ──► Step 3 ──► Step 4 ──► Step 5
   │           │          │          │          │
