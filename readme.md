@@ -56,10 +56,10 @@ Traffic authorities collect millions of speed readings from highway sensors,
 but this data is UNLABELLED — no one has manually tagged timestamps as
 "congested" or "free flow."
 
-CHALLENGE: How can we automatically discover meaningful traffic patterns
+**CHALLENGE**: How can we automatically discover meaningful traffic patterns
 from raw speed data without any human-provided labels?
 
-SOLUTION: Apply unsupervised machine learning (HDBSCAN clustering) on
+**SOLUTION**: Apply unsupervised machine learning (HDBSCAN clustering) on
 engineered temporal and statistical features to group similar traffic
 states and detect anomalies
 
