@@ -79,29 +79,16 @@ Timestamp Sensor_1 Sensor_2 Sensor_3 ... Sensor_207
 2012-03-01 00:05:00 64.8 62.1 66.9 ... 60.1
 2012-03-01 00:10:00 65.0 61.5 67.3 ... 58.7
 
-### Installation
-
-**Step 1: Clone the repository**
-
-`'' bash
-git clone https://github.com/YOUR_USERNAME/urban-traffic-pattern-mining.git
-cd urban-traffic-pattern-mining
-'''
-
-**Step 2: Create a virtual environment
-
-**Step 3: Install all dependencies
-
-**Step 4:Dataset Download
+🛠️ Installation
+StepActionCommand / DetailsStep 1Clone the repositorygit clone https://github.com/YOUR_USERNAME/urban-traffic-pattern-mining.git then cd urban-traffic-pattern-miningStep 2Create a virtual environmentpython -m venv venv and activate itStep 3Install all dependenciespip install -r requirements.txtStep 4Dataset DownloadDownload and place dataset in the /data folder
 
 
-### WE Run notebooks in sequential order!
+📓 Run Notebooks in Sequential Order
+StepNotebookPurposeStep 101_data_cleaning.ipynb🧹 CleanStep 202_engineer.ipynb⚙️ EngineerStep 303_cluster.ipynb🔵 ClusterStep 404_visualize.ipynb📊 VisualizeStep 505_interpret.ipynb🔍 Interpret Data Features, Patterns, Results & Ethics
 
-Step 1 ──► Step 2 ──► Step 3 ──► Step 4 ──► Step 5
-  │           │          │          │          │
-  ▼           ▼          ▼          ▼          ▼
-Clean      Engineer   Cluster   Visualize  Interpret
-Data       Features   Patterns  Results    & Ethics
+
+⚠️ Note: Notebooks must be run in order — each step depends on outputs from the previous one.
+
 
 ## 📓 Notebooks Overview :
 
